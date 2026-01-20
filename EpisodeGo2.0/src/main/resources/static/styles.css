@@ -1,0 +1,93 @@
+/* 背景設置 */
+body {
+    background-color: #FFECEC; /* 淡米色背景 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4e3d2c; /* 深棕色文字 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* logo圖片樣式 */
+.logo {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	/* display: block; 設置為塊級元素，確保能使用 margin 置中 */
+
+}
+
+/* 容器樣式 */
+/*
+.container {
+    background-color: #ffffff; 
+    padding: 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 460px;
+	height: 150px;
+    text-align: center;
+}
+*/
+
+/* 標題樣式 */
+h1 {
+    margin-bottom: 20px;
+    color: #8b5e3c; /* 中棕色標題 */
+    font-size: 2em;
+}
+
+/* 表單樣式 */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 搜尋搜尋框樣式 */
+input[type="text"] {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #EA0000; /* 黃棕色邊框 */
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s;
+	margin-right: 8px; /* 新增右側間距，與按鈕之間保留空隙 */
+
+}
+
+input[type="text"]:focus {
+    border-color: #FF9797; /* 聚焦時邊框顏色變化 */
+}
+
+/* 搜尋按鈕樣式 */
+.btn {
+    display: inline-block;
+    padding:8px 50px; /* 調整按鈕內邊距 */
+    font-size: 18px; /* 調整字體大小 */
+    font-weight: bold; /* 字體加粗 */
+    text-transform: uppercase; /* 將文字轉換為大寫 */
+    border: 0px solid #FFB5B5; /* 棕色邊框 */
+    border-radius: 8px; /* 增加圓角 */
+    background-color: #FFB5B5; /* 按鈕的背景顏色 */
+    color: #fff; /* 按鈕文字顏色 */
+    transition: all 0.3s ease-in-out; /* 添加平滑過渡效果 */
+    cursor: pointer; /* 設置為指針樣式，提示可點擊 */
+}
+
+.btn:hover {
+    background-color: #AE0000; /* 鼠標懸停時背景色變深 */
+    color: #fff; /* 文字顏色保持白色 */
+    border-color: #AE0000; /* 邊框顏色變化為更深的棕色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加懸停時的陰影效果 */
+}
+
+.btn:active {
+    background-color: #70422a; /* 點擊時背景色更深 */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); /* 添加按下去的內凹陰影效果 */
+}
+
