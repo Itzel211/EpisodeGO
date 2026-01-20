@@ -1,0 +1,60 @@
+/* 背景設置為溫暖的米色 */
+body {
+    background-color: #ffffff; /* 設置頁面背景為淡米色，營造溫暖的視覺效果 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 指定字體系列，優先使用現代無襯線字體 */
+    color: #4e3d2c; /* 設定文字顏色為深棕色，與背景色形成對比 */
+    display: flex; /* 使用彈性盒布局，使內容居中對齊 */
+    justify-content: center; /* 水平居中內容 */
+    align-items: center; /* 垂直居中內容 */
+    height: 100vh; /* 設置視窗高度的 100%，使內容完全居中 */
+    margin: 0; /* 移除預設的外邊距 */
+}
+
+/* 圖片樣式 */
+.logo {
+    max-width: 100%; /* 限制圖片寬度不超過父元素寬度 */
+    height: auto; /* 保持圖片寬高比例 */
+    border-radius: 8px; /* 圖片四角設置為輕微圓角 */
+}
+
+/* 容器樣式 */
+.container {
+    background-color: #fff3e0; /* 設置容器背景色為淡黃色，與頁面背景形成層次 */
+    padding: 30px 50px; /* 添加內邊距，讓內容與容器邊緣保持距離 */
+    border-radius: 12px; /* 圓角設計，使容器更柔和 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 添加陰影，增強立體感 */
+    width: 400px; /* 固定容器寬度為 400px */
+    text-align: center; /* 設置文字水平居中對齊 */
+}
+
+/* 標題樣式 */
+h1 {
+    margin-bottom: 20px; /* 標題底部設置間距 */
+    color: #8b5e3c; /* 設置標題顏色為中棕色 */
+    font-size: 2em; /* 設定標題字體大小為 2 倍基準字體大小 */
+}
+
+/* 表單樣式 */
+form {
+    display: flex; /* 使用彈性盒布局，使表單元素在同一行排列 */
+    justify-content: center; /* 水平居中排列表單內容 */
+    align-items: center; /* 垂直居中表單元素 */
+    margin-bottom: 20px; /* 表單底部間距 */
+}
+
+/* 搜尋輸入框樣式 */
+input[type="text"] {
+    flex: 1; /* 搜尋輸入框填滿剩餘空間 */
+    padding: 12px 20px; /* 設定內邊距，增強輸入框的可點擊區域 */
+    border: 2px solid #a67855; /* 設置邊框為黃棕色，提升輸入框的可視性 */
+    border-radius: 6px 0 0 6px; /* 左側圓角設置，右側保持直角與按鈕對齊 */
+    outline: none; /* 聚焦時移除藍色外框 */
+    font-size: 1em; /* 設置字體大小為基準字體大小 */
+    transition: border-color 0.3s; /* 增加過渡效果，聚焦時顯得更流暢 */
+}
+
+input[type="text"]:focus {
+    border-color: #d4a373; /* 聚焦時邊框顏色變化為更明亮的黃棕色 */
+}
+
+/* 搜尋按鈕樣式 */
